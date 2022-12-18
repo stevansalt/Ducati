@@ -1,0 +1,195 @@
+
+.meni 
+{
+    display: flex;
+}
+
+.meni li 
+{
+    list-style: none;
+    background-color: gray;
+    font-weight: bold;
+    border: 2px;
+    padding: 12px;
+    margin: auto;
+    width: 420px;
+    text-align: center;
+}
+.meni li a 
+{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.meni li:hover 
+{
+    background-color: green;
+}
+
+.meni li.trenutni 
+{
+    background-color: green;
+}
+
+.Pocetna
+{
+    background-image: url(Slike/weed_shop.jpg);
+}
+
+
+h1
+{
+    color:whitesmoke;
+    position: relative;
+    left: 760px;
+    top:560px;
+}
+
+.Pocetna p 
+{
+    font-weight: bold;
+    font-size: 15px;
+    color:whitesmoke;
+    position: relative;
+    left: 610px;
+    top:560px;
+}
+
+.onama_text p 
+{
+    text-align: center;
+    position:relative;
+    left: 230px;
+    top:100px;
+    font-size: 23px;
+    color:black;
+}
+.onama_text h1 
+{
+    text-align: center;
+    position:relative;
+    left: 20px;
+    top:100px;
+    font-size: 34px;
+    color:greenyellow;
+}
+
+
+.body_proizvodi
+{
+background-color: rgb(181, 186, 189);
+}
+.Proizvod p 
+{
+    text-align:center;
+    font-weight: bold;
+}
+
+
+.Proizvod a 
+{
+    border: 30px;
+    color:whitesmoke;
+    background-color: green;
+    margin:auto;
+    padding:10px;
+    text-decoration: none;
+}
+.Proizvod p 
+{
+    font-size: 23px;
+}
+
+form
+{
+    display: flex;
+    padding:30px 2px 30px 2px;
+
+}
+
+button
+{
+    margin-left: 30px;
+    color:#219814;
+
+}
+
+
+button:hover 
+{
+    background-color:#219814;
+    color:white;
+}
+
+#form-paragraf 
+{
+    color:#219814;
+    font-weight: bold;
+    font-size:40px;
+}
+
+label 
+{
+    color:green;
+    font-weight: bold;
+}
+button {
+  color: white;
+  background-color: black;
+  transition: all 0.5s;
+  position: relative; 
+}
+button span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+button:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+button:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+
+
+@media screen and (max-width: 570px) 
+{
+    .meni 
+    {
+        display: block;
+        padding:auto;
+    }
+    .meni li a 
+    {
+        display: block;
+    }
+}
