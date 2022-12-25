@@ -107,20 +107,6 @@ form
 
 }
 
-button
-{
-    margin-left: 30px;
-    color:rgb(170, 18, 18);
-
-}
-
-
-button:hover 
-{
-    background-color:rgb(170, 18, 18);
-    color:white;
-}
-
 #form-paragraf 
 {
     color:black;
@@ -133,13 +119,23 @@ label
     color:black;
     font-weight: bold;
 }
-button {
+
+button 
+{
+  margin-left: 30px;
   color: white;
   background-color: black;
   transition: all 0.5s;
   position: relative; 
   
 }
+
+button:hover 
+{
+    background-color:rgb(170, 18, 18);
+    color:white;
+}
+
 .animacija
 {
     width: 50%;
